@@ -43,7 +43,7 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
             buttonAboutMe_BGO.Name = "buttonAboutMe_BGO";
             buttonAboutMe_BGO.Size = new Size(81, 34);
             buttonAboutMe_BGO.TabIndex = 1;
-            buttonAboutMe_BGO.Text = "ОК";
+            buttonAboutMe_BGO.Text = "О К";
             buttonAboutMe_BGO.UseVisualStyleBackColor = false;
             buttonAboutMe_BGO.Click += buttonAboutMe_BGO_Click;
             // 
