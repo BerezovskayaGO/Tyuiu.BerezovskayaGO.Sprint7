@@ -19,9 +19,8 @@
             }
             base.Dispose(disposing);
         }
-
-        private TextBox textBoxAboutMe_BGO;
         private Button buttonAboutMe_BGO;
+        private Label labelAbouMe_BGO;
         private PictureBox pictureBoxAboutMe_BGO;
     }
 }
