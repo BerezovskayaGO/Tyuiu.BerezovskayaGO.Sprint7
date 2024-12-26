@@ -98,5 +98,40 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
         {
             // Обработчик события, если необходимо
         }
+
+        private void groupBoxTeacher_BGO_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxResult_BGO_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxInput_BGO_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxFIO_BGO_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxChartBar_BGO_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxMail_BGO_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxBuilding_BGO_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
