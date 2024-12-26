@@ -133,5 +133,15 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
         {
 
         }
+
+        private void textBoxInfo_BGO_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxLogo_BGO_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

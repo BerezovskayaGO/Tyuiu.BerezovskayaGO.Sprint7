@@ -42,11 +42,13 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
             pictureBoxChartBar_BGO = new PictureBox();
             pictureBoxMail_BGO = new PictureBox();
             pictureBoxBuilding_BGO = new PictureBox();
+            pictureBoxLogo_BGO = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)chartStatistics).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFIO_BGO).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxChartBar_BGO).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxMail_BGO).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxBuilding_BGO).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLogo_BGO).BeginInit();
             SuspendLayout();
             // 
             // buttonHelp_BGO
@@ -73,7 +75,7 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
             listBoxResult_BGO.ForeColor = SystemColors.InactiveCaptionText;
             listBoxResult_BGO.FormattingEnabled = true;
             listBoxResult_BGO.ItemHeight = 45;
-            listBoxResult_BGO.Location = new Point(60, 397);
+            listBoxResult_BGO.Location = new Point(60, 386);
             listBoxResult_BGO.Name = "listBoxResult_BGO";
             listBoxResult_BGO.Size = new Size(1276, 45);
             listBoxResult_BGO.TabIndex = 3;
@@ -82,7 +84,7 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
             // buttonSearch_BGO
             // 
             buttonSearch_BGO.BackgroundImage = (Image)resources.GetObject("buttonSearch_BGO.BackgroundImage");
-            buttonSearch_BGO.Location = new Point(657, 213);
+            buttonSearch_BGO.Location = new Point(653, 205);
             buttonSearch_BGO.Name = "buttonSearch_BGO";
             buttonSearch_BGO.Size = new Size(86, 82);
             buttonSearch_BGO.TabIndex = 4;
@@ -92,7 +94,7 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
             // textBoxInput_BGO
             // 
             textBoxInput_BGO.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxInput_BGO.Location = new Point(60, 236);
+            textBoxInput_BGO.Location = new Point(60, 224);
             textBoxInput_BGO.Multiline = true;
             textBoxInput_BGO.Name = "textBoxInput_BGO";
             textBoxInput_BGO.Size = new Size(541, 47);
@@ -118,14 +120,14 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
             chartStatistics.Margin = new Padding(3, 4, 3, 4);
             chartStatistics.Name = "chartStatistics";
             chartStatistics.Palette = ChartColorPalette.Berry;
-            chartStatistics.Size = new Size(842, 368);
+            chartStatistics.Size = new Size(879, 347);
             chartStatistics.TabIndex = 7;
             chartStatistics.Text = "chart1";
             // 
             // groupBoxTeacher_BGO
             // 
             groupBoxTeacher_BGO.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            groupBoxTeacher_BGO.Location = new Point(49, 181);
+            groupBoxTeacher_BGO.Location = new Point(49, 169);
             groupBoxTeacher_BGO.Name = "groupBoxTeacher_BGO";
             groupBoxTeacher_BGO.RightToLeft = RightToLeft.No;
             groupBoxTeacher_BGO.Size = new Size(585, 122);
@@ -137,7 +139,7 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
             // groupBoxResult_BGO
             // 
             groupBoxResult_BGO.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            groupBoxResult_BGO.Location = new Point(49, 347);
+            groupBoxResult_BGO.Location = new Point(49, 337);
             groupBoxResult_BGO.Name = "groupBoxResult_BGO";
             groupBoxResult_BGO.Size = new Size(1311, 113);
             groupBoxResult_BGO.TabIndex = 9;
@@ -149,17 +151,18 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
             // 
             textBoxInfo_BGO.BackColor = Color.AliceBlue;
             textBoxInfo_BGO.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            textBoxInfo_BGO.Location = new Point(1088, 521);
+            textBoxInfo_BGO.Location = new Point(1069, 521);
             textBoxInfo_BGO.Multiline = true;
             textBoxInfo_BGO.Name = "textBoxInfo_BGO";
             textBoxInfo_BGO.Size = new Size(700, 330);
             textBoxInfo_BGO.TabIndex = 10;
-            textBoxInfo_BGO.Text = "Данная программа помогает найти информацию про преподавателей, \r\nа именно:\r\n\r\nФИО\r\n\r\nСтаж работы в университете \r\n\r\nЭлектронная почта\r\n\r\nКафедра\r\n\r\n";
+            textBoxInfo_BGO.Text = "Данная программа помогает найти информацию про преподавателей, \r\nа именно:\r\n\r\nФИО\r\n\r\nСтаж работы в университете \r\n\r\nКафедра\r\n\r\nЭлектронная почта\r\n";
+            textBoxInfo_BGO.TextChanged += textBoxInfo_BGO_TextChanged;
             // 
             // pictureBoxFIO_BGO
             // 
             pictureBoxFIO_BGO.BackgroundImage = (Image)resources.GetObject("pictureBoxFIO_BGO.BackgroundImage");
-            pictureBoxFIO_BGO.Location = new Point(1048, 604);
+            pictureBoxFIO_BGO.Location = new Point(1028, 604);
             pictureBoxFIO_BGO.Name = "pictureBoxFIO_BGO";
             pictureBoxFIO_BGO.Size = new Size(34, 32);
             pictureBoxFIO_BGO.TabIndex = 11;
@@ -169,7 +172,7 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
             // pictureBoxChartBar_BGO
             // 
             pictureBoxChartBar_BGO.BackgroundImage = (Image)resources.GetObject("pictureBoxChartBar_BGO.BackgroundImage");
-            pictureBoxChartBar_BGO.Location = new Point(1048, 664);
+            pictureBoxChartBar_BGO.Location = new Point(1029, 664);
             pictureBoxChartBar_BGO.Name = "pictureBoxChartBar_BGO";
             pictureBoxChartBar_BGO.Size = new Size(34, 31);
             pictureBoxChartBar_BGO.TabIndex = 12;
@@ -179,7 +182,7 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
             // pictureBoxMail_BGO
             // 
             pictureBoxMail_BGO.BackgroundImage = (Image)resources.GetObject("pictureBoxMail_BGO.BackgroundImage");
-            pictureBoxMail_BGO.Location = new Point(1048, 720);
+            pictureBoxMail_BGO.Location = new Point(1029, 779);
             pictureBoxMail_BGO.Name = "pictureBoxMail_BGO";
             pictureBoxMail_BGO.Size = new Size(34, 30);
             pictureBoxMail_BGO.TabIndex = 13;
@@ -189,12 +192,22 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
             // pictureBoxBuilding_BGO
             // 
             pictureBoxBuilding_BGO.BackgroundImage = (Image)resources.GetObject("pictureBoxBuilding_BGO.BackgroundImage");
-            pictureBoxBuilding_BGO.Location = new Point(1048, 775);
+            pictureBoxBuilding_BGO.Location = new Point(1029, 723);
             pictureBoxBuilding_BGO.Name = "pictureBoxBuilding_BGO";
             pictureBoxBuilding_BGO.Size = new Size(34, 32);
             pictureBoxBuilding_BGO.TabIndex = 14;
             pictureBoxBuilding_BGO.TabStop = false;
             pictureBoxBuilding_BGO.Click += pictureBoxBuilding_BGO_Click;
+            // 
+            // pictureBoxLogo_BGO
+            // 
+            pictureBoxLogo_BGO.BackgroundImage = (Image)resources.GetObject("pictureBoxLogo_BGO.BackgroundImage");
+            pictureBoxLogo_BGO.Location = new Point(1387, 119);
+            pictureBoxLogo_BGO.Name = "pictureBoxLogo_BGO";
+            pictureBoxLogo_BGO.Size = new Size(421, 261);
+            pictureBoxLogo_BGO.TabIndex = 15;
+            pictureBoxLogo_BGO.TabStop = false;
+            pictureBoxLogo_BGO.Click += pictureBoxLogo_BGO_Click;
             // 
             // FormMain_BGO
             // 
@@ -202,6 +215,7 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(1842, 933);
+            Controls.Add(pictureBoxLogo_BGO);
             Controls.Add(pictureBoxBuilding_BGO);
             Controls.Add(pictureBoxMail_BGO);
             Controls.Add(pictureBoxChartBar_BGO);
@@ -222,6 +236,7 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
             ((System.ComponentModel.ISupportInitialize)pictureBoxChartBar_BGO).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxMail_BGO).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxBuilding_BGO).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLogo_BGO).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -233,5 +248,6 @@ namespace Tyuiu.BerezovskayaGO.Sprint7.Project.V3
         private PictureBox pictureBoxChartBar_BGO;
         private PictureBox pictureBoxMail_BGO;
         private PictureBox pictureBoxBuilding_BGO;
+        private PictureBox pictureBoxLogo_BGO;
     }
 }
